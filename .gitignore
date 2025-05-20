@@ -1,0 +1,5 @@
+#ignore the venv files
+# Ignore virtual environment directories
+venv/
+#ignore scrape.py 
+scrape.py
