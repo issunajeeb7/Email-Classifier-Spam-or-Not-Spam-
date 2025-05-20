@@ -3,3 +3,7 @@
 venv/
 #ignore scrape.py 
 scrape.py
+#ignore _pycache_
+__pycache__/
+#ignore the .gitignore file
+.gitignore
