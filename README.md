@@ -23,7 +23,7 @@ A machine learning-based email spam detection system built with Python, Streamli
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/issunajeeb7/JobHunt.git
+git clone https://github.com/issunajeeb7/Email-Classifier-Spam-or-Not-Spam-
 cd email-spam-detector
 ```
 
