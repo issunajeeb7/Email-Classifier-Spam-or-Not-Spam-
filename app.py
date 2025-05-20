@@ -72,8 +72,11 @@ message = st.text_area(
     key="message_input"
 )
 
-# Only show prediction when there's input
-if message.strip():
+# Add check button
+check_button = st.button("Check Message", key="check_button")
+
+# Only show prediction when button is clicked and there's input
+if check_button and message.strip():
     # Preprocess and predict
     processed_input = preprocess_text(message)
     prediction = model.predict([processed_input])[0]
@@ -106,11 +109,11 @@ if message.strip():
         "</div>",
         unsafe_allow_html=True
     )
-else:
+elif not message.strip():
     # Show placeholder message when input is empty
     st.markdown(
         "<div style='text-align: center; color: #666666; margin-top: 30px;'>"
-        "Enter a message above to check if it's spam"
+        "Enter a message above and click 'Check Message' to analyze"
         "</div>",
         unsafe_allow_html=True
     )

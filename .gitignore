@@ -7,3 +7,4 @@ scrape.py
 __pycache__/
 #ignore the .gitignore file
 .gitignore
+.streamlit/
